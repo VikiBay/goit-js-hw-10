@@ -41,6 +41,7 @@ function checkCountriesArray(data){
         Notify.info('Too many matches found. Please enter a more specific name.');
 
        } else if(data.length>=2 && data.length<=10){
+        refs.countryInfo.innerHTML='';
     createMarkupCountryList(data) 
 
         } else if (data.length===1){
